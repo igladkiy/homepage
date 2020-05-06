@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Résumé</title>
@@ -10,11 +11,13 @@
       border-radius: 50%;
       width: 100%;
     }
+
     .avatar:hover {
       transform: rotate(360deg);
     }
   </style>
 </head>
+
 <body>
   <main>
     <article>
@@ -25,7 +28,6 @@
               <div class="avatar-wrapper">
                 <object class="avatar" data="./img/47580684_1592402014239647_6257782709075050496_n.jpg" role="img"
                   aria-label="My profile picture"></object>
-                  style="border-radius: 50%;" aria-label="My profile picture"></object>
               </div>
             </div>
             <div class="thirteen wide column">
@@ -294,21 +296,21 @@
       </div>
     </article>
   </main>
-<footer>― That's all, folks! 🐷</footer>
-<script>
-  const avatar = document.getElementsByClassName('avatar')[0];
+  <footer>That's all, folks! 🐷</footer>
+  <script>
+    const avatar = document.getElementsByClassName('avatar')[0];
 
-  avatar.addEventListener('mouseover', function () {
-    this.data = './img/123.jpg';
-  });
+    avatar.addEventListener('mouseover', function () {
+      this.data = './img/123.jpg';
+    });
 
-  avatar.addEventListener('mouseout', function () {
-    this.data= './img/funny_giraffe_with_bowtie_and_monocle_classic_round_sticker-r86a6ddbb3a8641b8a5feec8e0d8c9d18_0ugmp_8byvr_630.jpg'
-
-    setTimeout(() => {
-    this.data = './img/47580684_1592402014239647_6257782709075050496_n.jpg';
-    }, 2000);
-  })
-</script>
+    avatar.addEventListener('mouseout', function () {
+      this.data = './img/funny_giraffe_with_bowtie_and_monocle_classic_round_sticker-r86a6ddbb3a8641b8a5feec8e0d8c9d18_0ugmp_8byvr_630.jpg'
+      setTimeout(() => {
+        this.data = './img/47580684_1592402014239647_6257782709075050496_n.jpg';
+      }, 2000);
+    })
+  </script>
 </body>
+
 </html>
